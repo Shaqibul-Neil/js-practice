@@ -1,0 +1,44 @@
+
+.dropdown-content{
+	display: none;
+}
+.show{
+	display: block;
+}
+.ddcontent{
+	display: none;
+}
+.show2{
+	display: block;
+}
+.d3content{
+	display: none;
+}
+.show3{
+	display: block;
+}
+/*animation Event*/
+#andiv, #andiv2, #andiv3{
+	width: 400px;
+	height: 200px;
+	background-color: lightgrey ;
+	position: relative;
+}
+@keyframes moving{
+	from{top: 0px;}
+	to{top: 200px;}
+}
+#andiv2{
+	animation: andivmoving 5s infinite;
+}
+@keyframes andivmoving{
+	from{transform: translate(0, 0);}
+	to{transform: translate(200px, 200px); }
+}
+#andiv3{
+	animation: andiv3moving 2s infinite;
+}
+@keyframes andiv3moving{
+	from{right: 0px;}
+	to{right: 200px;}
+}

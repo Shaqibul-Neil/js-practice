@@ -1,0 +1,681 @@
+<!doctype html>
+<html>
+<head>
+
+	<!--meta tags-->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Practice 1</title>
+
+	<!--css links-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+</head>
+
+<body>
+
+	<div class="container pt-5 pb-5">
+
+		<!-- show text -->
+		<h2>Click the button to show text</h2>
+		<button type="button" onclick="showText()" class="btn btn-dark">Show Text</button>
+		<p id="st"></p>
+
+		<hr>
+
+		<!-- show date -->
+		<h2>Click the button to show date</h2>
+		<button type="button" onclick="showDate()" class="btn btn-dark">Show Date</button>
+		<p id="sd"></p>
+
+		<br>
+
+		<h2>Show Date 2</h2>
+		<button type="button" onclick="showDate2()" class="btn btn-dark">Show Date 2</button>
+		<p id="sd2"></p>
+
+		<br>
+
+		<h2>Show Date 3</h2>
+		<button type="button" onclick="showDate3()" class="btn btn-dark">Show Date 3</button>
+		<p id="sd3"></p>
+
+		<!-- show date -->
+
+		<hr>
+
+		<!-- change text -->
+		<h2>Click the button to change the text</h2>
+		<button type="button" onclick="changeText()" class="btn btn-dark">Change Text</button>
+		<p id="ct">My Name is</p>
+
+		<hr>
+
+		<!-- bulb on/off -->
+		<h2>Click te buttons to off on bulb</h2>
+		<button type="button" onclick="bulbOn()" class="btn btn-dark">Bulb On</button>
+		<img src="images/off.gif" id="image" alt="">
+		<button type="button" onclick="bulbOff()" class="btn btn-dark">Bulb Off</button>
+
+		<br>
+
+		<!-- change image -->
+		<h2>Click te buttons to change the image</h2>
+		<button type="button" onclick="changeEurope()" class="btn btn-dark">See Rome</button>
+		<button type="button" onclick="changeRome()" class="btn btn-dark">See Europe</button>
+		<button type="button" onclick="changeLondon()" class="btn btn-dark">See London</button>
+		<img src="images/europe.png" id="img2" alt="">
+
+		<hr>
+
+		<!-- change font -->
+		<h2>Click te buttons to change the font</h2>
+		<button type="button" onclick="changeFont()" class="btn btn-dark">Font Size</button>
+		<p id="fc">Shaqibul Islam</p>
+
+		<hr>
+
+		<!-- text hide -->
+		<h2>Click te buttons to hide the text</h2>
+		<button type="button" onclick="hideText()" class="btn btn-dark">Text Hide</button>
+		<p id="th">Shaqibul Islam</p>
+
+		<hr>
+
+		<!-- appear text -->
+		<h2>Click te buttons to appear the text</h2>
+		<button type="button" onclick="appearText()" class="btn btn-dark">Text Appear</button>
+		<p id="at" style="display: none;">Shaqibul Islam</p>
+
+		<hr>
+
+		<!-- operators -->
+		<h2>Result Of Addition as alert</h2>
+		<button type="button" onclick="addition()" class="btn btn-dark">5+6</button>
+		<p></p> 
+
+		<br>
+
+		<h2>Result Of Subtraction as alert</h2>
+		<button type="button" onclick="subtraction()" class="btn btn-dark">11-5</button>
+		<p></p>
+
+		<br>
+
+		<h2>Result Of Multiplication see in console</h2>
+		<button type="button" onclick="multiplication()" class="btn btn-dark">11*5</button>
+		<p></p>
+
+		<br>
+
+		<h2>Result Of Addition as html</h2>
+		<button type="button" onclick="addition2()" class="btn btn-dark">5+6</button>
+		<p id="a2"></p>
+
+		<br>
+
+		<h2>Result Of division as html</h2>
+		<button type="button" onclick="division()" class="btn btn-dark">75/7</button>
+		<p id="divi"></p>
+
+		<br>
+
+		<h2>Result Of addition as document</h2>
+		<button type="button" onclick="addition3()" class="btn btn-dark">15+64</button>
+		<p></p>
+
+		<br>
+
+		<h2>Result Of subtraction as document</h2>
+		<button type="button" onclick="subtraction2()" class="btn btn-dark">64-40</button>
+		<p></p>
+		<!-- operators -->
+
+		<hr>
+
+		<!-- print -->
+		<h2>Print This Page By clicking on the button</h2>
+		<button type="button" onclick="printPage()" class="btn btn-dark">Print Page</button>
+		<p></p>
+
+		<hr>
+
+		<!-- Js Statements -->
+		<h2>JavaScript Statements</h2>
+		<button type="button" onclick="jsStatementsAddition()" class="btn btn-dark">c = a + b</button>
+		<p id="jss"></p>
+
+		<br>
+
+		<h2>JavaScript Statements 2</h2>
+		<button type="button" onclick="jsStatementsAddition2()" class="btn btn-dark">z = x + y</button>
+		<p id="jss2"></p>
+
+		<br>
+
+		<h2>JavaScript Statements 3</h2>
+		<button type="button" onclick="jsStatementsOperation()" class="btn btn-dark">i = d * h / f + r - g + ( f * g )</button>
+		<p id="jss3"></p>
+
+		<hr>
+
+		<!-- js variables -->
+		<h2>JavaScript Variables</h2>
+		<button type="button" onclick="jsVariables()" class="btn btn-dark">qr</button>
+		<p id="jvar"></p>
+
+		<br>
+
+		<h2>JavaScript Variables 2</h2>
+		<button type="button" onclick="jsVariables2()" class="btn btn-dark">5 * 6 * ( 10 / 2 )</button>
+		<p id="jvar2"></p>
+
+		<br>
+
+		<h2>JavaScript Variables 3</h2>
+		<button type="button" onclick="jsVariables3()" class="btn btn-dark">xz * yz</button>
+		<p id="jvar3"></p>
+
+		<br>
+
+		<h2>JavaScript Variables 4</h2>
+		<button type="button" onclick="jsVariables4()" class="btn btn-dark">xq + 5</button>
+		<p id="jvar4"></p>
+
+		<br>
+
+		<h2>JavaScript Variables 5</h2>
+		<button type="button" onclick="jsVariables5()" class="btn btn-dark">ii</button>
+		<p id="jvar5"></p>
+
+		<hr>
+
+		<!-- onplay onpause oncanplay event -->
+		<h2>The onplay Event</h2>
+		<p>Press Play pause and wait to finish</p>
+		<video controls oncanplay="myvideo2()" onplay="myvideo()" onpause="myvideo1()" ontimeupdate="myvideo3(this)" onended="myvideo4()" onseeked="myvideo5()" src="video/demo.mp4"></video>
+		<p id="vids"></p>
+
+		<br>
+
+		<h2>The onseeked Event</h2>
+		<p>Seek and change the volume</p>
+		<video controls onseeked="myvideo5()" onvolumechange="myvideo6()" src="video/demo.mp4"></video>
+		<p id="vids1"></p>
+
+		<hr>
+
+		<!-- mouse event -->
+		<h2>The Mouse Event</h2>
+
+		<br>
+
+		<!-- single/double click -->
+		<h3>Single/Double Click</h3>
+		<p id="ccsd" onclick="changeColorSingle()" ondblclick="changeColorDouble()">Click me to change my color single and double</p>
+
+		<br>
+
+		<!-- copy text -->
+		<h3>Click Copy</h3>
+		<input type="text" id="input1" value="Shaqibul">
+		<input type="text" id="input2">
+		<button onclick="copyTextInput()" type="button" class="btn btn-dark">Copy</button>
+		<br>
+		<h3>Click Copy 2</h3>
+		<input type="text" id="input3" value="Islam">
+		<input type="text" id="input4">
+		<button type="button" class="btn btn-dark" onclick="copyTextInput2()">Copy</button>
+		<br>
+		<!-- bg color change -->
+		<h3>BG color change</h3>
+		<p>Click anywhere to change the bg color</p>
+		<br>
+		<h3>BG color</h3>
+		<p>Click anywhere</p>
+		<h4>change bg</h4>
+
+		<hr>
+
+		<!-- dropdown -->
+		<h3>Click on the button to see the dropdown</h3>
+
+		<div class="dropdown">
+			<button id="myBtn" class="dropbtn">Dropdown</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</div>
+		<br>
+		<div class="dd2">
+			<button type="button" id="ddb" class="btn btn-dark">DropDown</button>
+			<div id="ddc" class="ddcontent">
+				<a href="#">Home</a>
+				<a href="#">Home</a>
+				<a href="#">Home</a>
+			</div>
+		</div>
+		<br>
+		<div class="drop3">
+			<button id="dd3" class="btn btn-danger">Drop 3</button>
+			<div id="dc3" class="d3content">
+				<ul class="list-unstyled">
+					<li>
+						<a href="#">xyz</a>
+						<a href="#">xyz</a>
+						<a href="#">xyz</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<hr>
+
+		<!-- double click -->
+		<h3>Double click 2 types</h3>
+		<p id="dcm" onclick="doubleClickMe()">Double Click me 1</p>
+		<p id="dcm2">Double Click me 2</p>
+
+
+		<hr>
+
+		<!-- on mouse down -->
+		<h2>On Mouse Down Event</h2>
+		<p id="msdown" onmousedown="onMouseDown()" onmouseup="onMouseUp()">Click the text</p>
+
+		<hr>
+
+		<!-- on mouse enter/leave/move/over -->
+		<h2>Hover Over the Image</h2>
+		<img id="msel" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)" src="images/rome.png" alt="">
+
+		<br>
+
+		<h2>Hover Over the below button</h2>
+		<button id="btnhov" class="btn btn-info" onmouseenter="btnMouseEnter(this)" onmouseleave="btnMouseLeave(this)">Hover Me</button>
+
+		<br>
+
+		<h2 id="hvt">Hover Over the Text</h2>
+
+		<br>
+
+		<h2>Enter Leave Move over</h2>
+		<div style="width: 150px; height: 100px; border: 1px solid;" onmousemove="onMouseMove()">
+			<p id="mmove">Mouse Move</p>
+		</div>
+		<div style="width: 150px; height: 100px; border: 1px solid;" onmouseenter="onEnterMouse()">
+			<p id="menter">Mouse Enter</p>
+		</div>
+		<div style="width: 150px; height: 100px; border: 1px solid;" onmouseleave="onLeaveMouse()">
+			<p id="mleave">Mouse Leave</p>
+		</div>
+		<div style="width: 150px; height: 100px; border: 1px solid;" onmouseover="onOverMouse()">
+			<p id="mover">Mouse Over</p>
+		</div>
+		<div style="width: 150px; height: 400px; border: 1px solid;" onmouseout="onOutMouse()">
+			<p id="mout">Mouse Out</p>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, sint. Et voluptatibus hic excepturi veniam nobis aperiam velit, suscipit maxime laudantium debitis libero incidunt. Est, expedita? Inventore iusto ea illo!</p>
+		</div>
+
+		<hr>
+
+		<!-- keyboard events -->
+		<h2>The altKey Property</h2>
+		<p onmousedown="isKeyPressed(event)">Click in this line when you hold down the Alt key.</p>
+		<p id="altkey"></p>
+
+		<br>
+
+		<h2>The ctrlKey Property</h2>
+		<p onmousedown="ctrlKeyPressed(event)">Click in this line when you hold down the m key.</p>
+		<p id="crkey"></p>
+
+		<br>
+
+		<!-- The buttons Property -->
+		<h2>The button Property</h2>
+		<p onmousedown="mouseButtonClick(event)">Click in this text with one of your mouse buttons!"</p>
+		<p>left(0), middle(1) or right(2)</p>
+		<p id="mbutton"></p>
+
+		<br>
+
+		<h2>The buttons Property</h2>
+		<p onmousedown="mouseButtonsClick(event)">Click in this text with one of your mouse buttons!"</p>
+		<p>left (1), middle(4) or right(2) or even together</p>
+		<p id="mbuttons"></p>
+
+		<br>
+
+		<!-- The clientXY and screenXY Properties -->
+		<h2>The clientXY and screenXY Properties</h2>
+		<div style="width: 500px; height: 200px; border: 1px solid;" onclick="showCoordinates(event)">
+			<p>Click anywhere in the doc to get the x and y coordinates of the mouse pointer, relative to the window.</p>
+			<p id="co_ordinate"></p>
+		</div>
+
+		<br>
+
+		<!-- The detail Property -->
+		<h2>The detail Property</h2>
+		<p>Click the button to display the number of clicks that happened in a short time.</p>
+		<button onclick="clickMeFast(event)">Click me Fast</button>
+		<p id="cmf"></p>
+
+		<br>
+
+		<!-- The relatedTarget Property -->
+		<h2>The relatedTarget Property</h2>
+		<div class="classdiv1" style="width: 500px; height: 200px; border: 1px solid;" onmouseover="getRelatedElement(event)">
+			<p class="classp1 m-auto" style="width: 250px; height: 70px; border: 1px solid;">Mouse over this box</p>
+		</div>
+		<div class="classdiv2" style="width: 500px; height: 200px; border: 1px solid;" onmouseover="getRelatedElement(event)">
+			<p class="classp2">Move over this box</p>
+		</div>
+		<p id="infos"></p>
+
+		<hr>
+
+		<!-- The onkeydown Event -->
+		<h2>The onkeydown Event</h2>
+		<p>Press a key in the input field:</p>
+		<input type="text" onkeydown="onKeyDown(this)">
+		<p id="kdown"></p>
+
+		<br>
+
+		<input type="text" onkeydown="onKeyDown2(this)">
+		<p id="kdown2"></p>
+
+		<br>
+
+		<input type="text" id="kdown3">
+
+		<br><br><br>
+
+		<input type="text" id="kdown4" onkeydown="onKeyDown4()" onkeyup="onKeyUp4()">
+
+		<br><br><br>
+
+		<input type="text" id="kdown5">
+
+		<br>
+
+		<!-- onkeypress -->
+		<h2>The onkeypress Event</h2>
+		<input type="text" onkeypress="onKeyPress()">
+
+		<br>
+
+		<!-- The keyup Event -->
+		<h2>The keyup Event</h2>
+		<p>The function transforms the input field to upper case:</p>
+		<input type="text" id="fname">
+
+		<br><br>
+
+		<input type="text" id="lname" onkeyup="onKeysUp2()">
+
+		<br>
+
+		<h2>The code Property</h2>
+		<p>Press a keyboard key in the input field:</p>
+		<input type="text" onkeyup="onKeysUp3(event)">
+		<p id="dets"></p>
+
+		<br>
+
+		<h2>The code Property</h2>
+		<p>Press a keyboard key in the input field:</p>
+		<input type="text" onkeyup="onKeysUp4(event)">
+		<p id="dets2"></p>
+
+		<br>
+
+		<h2>The code Property</h2>
+		<p>Press a keyboard key in the input field:</p>
+		<input type="text" onkeyup="onKeysUp5(event)">
+		<p id="dets3"></p>
+
+		<br>
+
+		<!-- Press metaKey -->
+		<h2>The metaKey Property</h2>
+		<p>Press metaKey in the input field:</p>
+		<input type="text" onkeydown="onKeyMeta(event)">
+		<p id="kmeta"></p>
+
+		<br>
+
+		<!-- Caps Lock Activated -->
+		<h2>Is Caps Lock Activated?</h2>
+		<p>Write som text in the input field, then activate the Cap Lock key and write some more text in the input field:</p>
+		<input type="text" onkeydown="capsLockActivated(event)">
+		<p id="cla"></p>
+
+		<hr>
+
+		<!-- focus blur event -->
+		<h2>The blur Event</h2>
+		Enter your name: <input type="text" id="fname2" onblur="onBlur()">
+		<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+		<br>
+
+		<!-- this/event on blur -->
+		<h2>Using This as ()</h2>
+		<input type="email" onfocus="validateEmailThis(this)" onblur="validateEmailThis(this)" placeholder="Enter your email" id="vein">
+		<p id="vmt"></p>
+
+		<br>
+
+		<h2>Using event as ()</h2>
+		<input type="email" onblur="validateEmailEvent(event)" placeholder="Enter your email">
+		<p id="vme"></p>
+
+		<br>
+
+		<!-- The relatedTarget property -->
+		<h2>The relatedTarget property</h2>
+		<textarea rows="4" cols="50">Click me (or use the tab key) to assure that I get focus. Then, click the input field to make sure that it gets focus.</textarea><br><br>
+		<input type="text" onfocus="getRelatedElement(event)">
+		<p id="focusblur"></p>
+
+		<br>
+
+		<h2>The relatedTarget property</h2>
+		<textarea rows="4" cols="50"> click the input field to make sure that it gets focus. Then, Click me (or use the tab key) to assure that I get focus.</textarea><br><br>
+		<input type="text" onblur="getRelated(event)">
+		<textarea rows="4" cols="50"> click the input field to make sure that it gets focus. Then, Click me (or use the tab key) to assure that I get focus.</textarea><br><br>
+		<p id="focusblur2"></p>
+
+		<hr>
+
+		<!-- animation Event -->
+		<h2>The animationstart, animationiteration and animationend Events</h2>
+		<div id="andiv" onclick="animationEvent()">Click me to start the animation.</div>
+
+		<br>
+
+		<!-- The animationName Property -->
+		<h2>The animationName Property</h2>
+		<div id="andiv2"></div>
+
+		<br>
+
+		<!-- The elapsedTime Property -->
+		<h2>The elapsedTime Property</h2>
+		<div id="andiv3"></div>
+
+		<hr>
+
+		<!-- The beforeunload Event -->
+		<h2>The beforeunload Event</h2>
+		<p>Reload this page, or click on the link below to invoke the onbeforeunload event.</p>
+		<a href="https://www.w3schools.com">Click here to go to w3schools.com</a>
+
+
+		<hr>
+
+		<!-- The blur Event -->
+		<h2>The blur Event</h2>
+		Enter your name: <input type="text" id="f_name">
+
+		<br>
+
+		<!-- The focus and blur Events -->
+		<h2>The focus and blur Events</h2>
+		<p>When you enter the input field, a function sets the background color to yellow.</p>
+		<p>When you leave the input field, a function removes the background color.</p>
+		<form id="myForm">
+		  <input type="text" id="myInput">
+		</form>
+
+		<br>
+
+		<!-- The focusin and focusout Events -->
+		<h2>The focusin and focusout Events</h2>
+		<p>When you enter the input field, a function sets the background color to yellow.</p>
+		<p>When you leave the input field, a function removes the background color.</p>
+		<form id="myForm2">
+		  <input type="text" id="myInput2">
+		</form>
+
+		<hr>
+
+		<!-- onchange Event -->
+		<h2>Select a new car from the list.</h2>
+		<select name="" id="mySelect" onchange="mySelection()">
+			<option value="Audi">Audi</option>
+			<option value="BMW">BMW</option>
+			<option value="Volvo">Volvo</option>
+			<option value="Aston Martin">Aston Martin</option>
+		</select>
+		<p id="result"></p>
+
+		<hr>
+
+		<!-- The onclick Event -->
+		<h2>The onclick Event</h2>
+		<p onclick="changeMyColor(this,'red')">Click me to change my color</p>
+		<br>
+		<p>Field1: <input type="text" id="fieldx" value="Hello World!"></p>
+		<p>Field2: <input type="text" id="fieldy"></p>
+		<button onclick="clickToCopy()">Copy</button>
+
+		<hr>
+
+		<!-- The contextmenu Event -->
+		<h2>The contextmenu Event</h2>
+		<div style="border:1px solid black;text-align:center">
+			<p>Right-click in this box!</p>
+			<p>Context menu will show.</p>
+		</div>
+		<br>
+		<div id="cdiv" style="border:1px solid black;text-align:center">
+			<p>Right-click in this box!</p>
+			<p>Context menu is disabled.</p>
+		</div>
+
+		<hr>
+
+		<!-- The contextmenu custom Event -->
+		<div id="divc" oncontextmenu="onContextMenu()" style="border:1px solid black; padding:10px">
+			<p>Right-click in this box to see the hidden content!</p>
+		</div>
+		<div id="cdivc" style="visibility:hidden">
+			<p>This info is hidden</p>
+			<p>This info is hidden</p>
+			<p>This info is hidden</p>
+		</div>
+
+		<hr>
+
+		<!-- on error -->
+		<img src="rome.png" id="imge">
+		<p id="imgep"></p>
+
+		<hr>
+
+		 <!-- on input -->
+		 <h2>The oninput Event</h2>
+		 <p>Write something in the text field to trigger a function.</p>
+		<input type="text" id="oni" oninput="onInputText()">
+		<p id="onpi"></p>
+
+		<hr>
+
+		<!-- oninvalid Event -->
+		<form action="page.php" method="get">
+			<input type="text" oninvalid="alert('Write name');" name="last_name" required>
+			<input type="submit" value="submit">
+		</form>
+
+		<hr>
+
+		<!-- Get User Input -->
+		<h2>Get User Input</h2>
+		<input type="text" id="userInput" placeholder="Enter your name">
+    	<button onclick="displayInput()">Submit</button>
+    	<p id="output"></p>
+
+    	<hr>
+
+    	
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+
+
+ 	</div>
+
+
+
+
+<!--js links-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
